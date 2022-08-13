@@ -1,0 +1,256 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	kitty
+
+# program launcher
+super + d
+	dmenu_run
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#
+# BSPWM HOTKEYS
+
+# quit/restart bspwm
+super + shift + {e,r}
+	bspc {quit,wm -r}
+
+# close and kill
+super + {_,shift + }q
+	bspc node -{c,k}
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+# send the newest marked node to the newest preselected node
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# swap the current node and the biggest node
+super + g
+	bspc node -s biggest.local
+
+# STATE/FLAGS
+
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+# SCRATCHPAD
+super + a
+	/home/olly/bin/bspwm_scratchpad.sh CCWF_RDP
+
+# FOCUS/SWAP
+
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the node for the given path jump
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# focus the next/previous node in the current desktop
+super + {_,shift + }n
+	bspc node -f {next,prev}.local
+
+# focus the next/previous desktop in the current monitor
+super + {less,greater}
+	bspc desktop -f {prev,next}.local
+
+# focus the last node/desktop
+alt + Tab
+	bspc node -f last
+
+alt + shift + Tab
+	bspc desktop -f last
+
+# focus the older or newer node in the focus history
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# PRESELECT
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+#super + ctrl + {1-9}
+#	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+# MOVE/RESIZE
+
+# expand a window by moving one of its side outward
+ctrl + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+ctrl + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+ctrl + alt + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# SPECIALKEYS
+XF86MonBrightness{Up,Down}
+ xbacklight -{inc,dec} 5 &
+
+XF86TouchpadToggle
+ ~/bin/toggleAsusTouchpad &
+
+# on the asus this needs kernel module asus-wireless to be loaded
+XF86RFKill
+  ~/bin/toggleAsusAirplaneMode
+
+XF86AudioMute
+ amixer -q -D pulse sset Master toggle &
+
+XF86Audio{Lower,Raise}Volume
+ amixer -q -D pulse sset Master 5%{-,+} unmute &
+
+XF86Audio{Play,Prev,Next,Stop}
+ ~/bin/mediacontrolkeys.sh {PlayPause,Previous,Next,Stop} &
+
+XF86Sleep
+	~/bin/i3/i3lock.sh && systemctl suspend -i
+
+XF86WakeUp
+	~/bin/i3/i3lock.sh
+
+# heres comes a dirty hack: KeepassXC won't handle Scroll_Lock...
+# so KeepassXC will autotype on ctrl+shift+alt+greater. We use xdotool
+# to send those keys on Scroll_Lock:
+XF86LaunchF
+	xdotool key --window `xdotool search "oliver-main - KeePassX" | head -n1` --delay 25 --clearmodifiers ctrl+alt+shift+greater
+
+# APPLICATION KEYBINDINGS (Super + Alt + Key)
+super + Return
+	/usr/bin/urxvt
+
+super + Pause
+	~/bin/rofi-shutdown.sh
+
+super + Tab
+ ~/Projekte/bookmark/bookmarks.sh
+
+super + Print
+ /usr/bin/spectacle
+
+hyper + r
+ /usr/bin/urxvt -e ranger
+
+hyper + k
+ /usr/bin/krusader
+
+hyper + f
+ ~/bin/i3/rofi-font-awesome.sh
+
+# ROFI SCRIPTS
+hyper + control + c
+	~/bin/rofi-config-files.sh
+
+hyper + d
+	~/bin/i3/i3rofi.sh combi
+
+hyper + shift + d
+	~/bin/i3/i3rofi.sh drun
+
+hyper + ctrl + d
+	~/bin/i3/i3rofi.sh ssh
+
+hyper + p
+  ~/bin/rofi-asterisk.sh
+
+hyper + s
+	~/bin/rofi-screen-setup.sh
+
+hyper + m; {m,u}
+	~/bin/rofi-mount.sh {start,stop}
+
+hyper + o
+  urxvt -shading 100 -title 'pseudoframe' -name 'pseudoframe' -e sh -c 'tput civis; sleep 365d'
+
+hyper + a
+ ~/bin/rofi-ccwf.sh
+
+# https://protesilaos.com
+# Dynamic desktop behaviour:  this invokes a script of mine that
+# implements dynamic desktops (see dotfiles).  If the given desktop
+# number is missing, it is created on the spot.  Empty desktops are then
+# removed automatically.
+#
+# mod3 +  = focus the given desktop
+# mod3 + shift +  = send focused window to given desktop
+# mod3 + ctrl + shift +  = as above, but send to next monitor
+# mod3 + ctrl + = switches the active (visible) desktop of the
+# unfocused monitor, without focusing it (focus stays on the current
+# desktop/monitor).  It also inserts a receptacle, meaning that the next
+# created window will go there without calling focus to itself (see my
+# bspwm_external_rules).
+#
+# Commands for receptacles are defined in the "advanced operations"
+# section.
+#
+# NOTE the leading `;` runs this command asynchronously.
+#super + {_,shift + ,ctrl + shift +,ctrl +}{asciicircum,1-9,0,ssharp,acute}
+#	;bspwm_dynamic_desktops {--df,--ns,--nm,--da} {0,1-9,10,11,12}
+#super + {_,shift + }{asciicircum,1-9,0,ssharp,acute}
+#	;bspwm_dynamic_desktops {--df,--ns} {0,1-9,10,11,12}
+
+#focus or send to the given desktop
+super + {_,shift + }{grave,asciicircum,1-9,0,ssharp,minus,equal,acute}
+	bspc {desktop -f,node -d} {0,0,1-9,10,11,11,12,12}
+
+#swap desktops
+super + ctrl + {grave,asciicircum,1-9,0,ssharp,minus,equal,acute}
+	bspc desktop -s {0,0,1-9,10,11,11,12,12} --follow
+
+#send focused desktop to the monitor of target desktop
+super + ctrl + shift + {grave,asciicircum,1-9,0,ssharp,minus,equal,acute}
+	bspc desktop -m `bspc query -M -d {0,0,1-9,10,11,11,12,12} --names` --follow
+
+#send focused desktop to next/previous/{dir} monitor
+super + ctrl + shift + {n,p,h,j,k,l}
+	bspc desktop -m {next,prev,west,south,north,east} --follow
+
+super + F1
+	surf -BS "https://www.la-familia-grande.de/index.php?site=bspwm" 
+
+#move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#Screenshot
+super + alt + p
+	scrot -s --line mode=edge ~/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_scrot.png
+	
+#gap presets
+super + shift + {y,u,i,o,p,z,x,c,v}
+	bspc config window_gap {0,5,10,20,30,50,80,150,200}
+
+#dynamic resizing
+super + shift + bracket{left,right}
+	bspc config -d focused window_gap "$(($(bspc config -d focused window_gap) {+,-} 5))"
