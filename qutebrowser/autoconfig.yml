@@ -6,9 +6,14 @@
 
 config_version: 2
 settings:
+  content.geolocation:
+    https://education.github.com: true
   content.notifications.enabled:
     https://app.element.io: true
+    https://cuvette.tech: false
     https://web.telegram.org: false
     https://www.chess.com: false
     https://www.netflix.com: false
     https://www.youtube.com: false
+  content.register_protocol_handler:
+    https://mail.google.com?extsrc=mailto&url=%25s: false

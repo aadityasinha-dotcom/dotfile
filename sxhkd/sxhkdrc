@@ -8,7 +8,13 @@ super + Return
 
 # program launcher
 super + d
-	dmenu_run
+  rofi -show run
+
+super + shift f
+  firefox
+
+super + shift + s
+  spotify
 
 # make sxhkd reload its configuration files:
 super + Escape
