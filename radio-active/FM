@@ -1,0 +1,123 @@
+╭─────────────────────────────────── RADIOACTIVE ───────────────────────────────────╮
+│                                                                                   │
+│         📻 Play any radios around the globe right from this Terminal ⚡!          │
+│         😄 Author: Dipankar Pal                                                   │
+│         ❓ Type '--help' for more details on available commands                   │
+│         🐛 Visit: https://github.com/deep5050/radio-active to submit issues       │
+│         ⭐ Show some love by starring the project on GitHub ❤                     │
+│         💵 You can donate me at https://deep5050.github.io/payme/                 │
+│         ❌ Press Ctrl+C to quit                                                   │
+│                                                                                   │
+╰───────────────────────────────────────────────────────────────────────────────────╯
+╭───────────────────────────────────────────────────────────────────────────────────╮
+│         An update available, run pip install radio-active==2.9.0                  │
+│ See the changes: https://github.com/deep5050/radio-active/blob/main/CHANGELOG.md  │
+╰───────────────────────────────────────────────────────────────────────────────────╯
+┏━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ ID  ┃ Station                                               ┃ Country ┃                    Tags                     ┃
+┡━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│  1  │         BBC Radio 5 Live Proper                       │   GB    │                                             │
+│  2  │         Fun Radio                                     │   SK    │                                             │
+│  3  │         Polskie Radio Bialystok                       │   PL    │                                             │
+│  4  │         Radio Bruno Pentasport Fiorentina             │   IT    │                                             │
+│  5  │         Radio Tešanj 92.2MHz                          │   BA    │                                             │
+│  6  │         Tick Tock Radio - 1950                        │   FI    │                    1950                     │
+│  7  │                                                       │   RU    │                talk & speech                │
+│     │ Invoice Radio                                         │         │                                             │
+│  8  │                                                       │   AF    │                  classical                  │
+│     │ RADIO MARIAM ARABIC                                   │         │                                             │
+│     │                                                       │         │                                             │
+│  9  │         Studio Brussel                                │   BE    │                                             │
+│ 10  │   _ 101.1 RADİO TURKEY FM                             │   GE    │ arab,arabic music,balada pop,der dunkle ... │
+│ 11  │   ICE RADIO                                           │   NL    │                    rock                     │
+│ 12  │   Radio Universidad - AM 1240 Universidad Nacional... │   AR    │ radio universitaria,universidad nacional... │
+│ 13  │  #1 RDMIX ITALO DISCO 80's                            │   CA    │ 12inch,192kbps,1980's,1980s,80,80's,80er... │
+│ 14  │  EL FONÓGRAFO - 690 AM - XEN-AM - Grupo Radio Cent... │   MX    │ 690 am,80s en español,am,balada en españ... │
+│ 15  │  FM 94.3 Radio Municipal de Toay                      │   AR    │      argentina,la pampa,municipal,toay      │
+│ 16  │  iHeart Radio Café                                    │   US    │   70s,80s,classic rock,mellow album rock    │
+│ 17  │  Kiss FM (Chetumal) - 95.3 FM - XHROO-FM - Grupo S... │   MX    │ 95.3 fm,américa,belice,chetumal,clásicos... │
+│ 18  │  L-radio                                              │   RU    │                 electronic                  │
+│ 19  │  M80 Rádio – 60s                                      │   PT    │                 60s,70s,80s                 │
+│ 20  │  M80 Rádio – 80s                                      │   PT    │              80s,pop,romantic               │
+│ 21  │  M80 Rádio – Ballads                                  │   PT    │            70s,80s,90s,romantic             │
+│ 22  │  M80 Rádio – Dance                                    │   PT    │              70s,80s,90s,dance              │
+│ 23  │  M80 Rádio – Pop                                      │   PT    │               70s,80s,90s,pop               │
+│ 24  │  Mooz Dance TV - Sunet ONLINE by RomaniaRadio.ro      │   RO    │                                             │
+│ 25  │  Radio 70 80 90 Marche                                │   IT    │              70s,80s,90s,italy              │
+│ 26  │  Radio DAŠ                                            │   BA    │                    folk                     │
+│ 27  │  Radio Deep Underground                               │   FR    │                                             │
+│ 28  │  Radio Mitre                                          │   AR    │                    news                     │
+│ 29  │  Radio Navahang                                       │   IR    │          middle eastern music,pop           │
+│ 30  │  Radio Rouge Italy                                    │   IT    │                                             │
+│ 31  │  Radio ZET Chilli                                     │   PL    │                                             │
+│ 32  │  RadioClassical Guitar                                │   US    │              classical guitar               │
+│ 33  │  Radiopostaja Mir - Međugorje                         │   BA    │        catholic,christian,religious         │
+│ 34  │  Rai Radio 1 Sport                                    │   IT    │ live sports,sports,sports news,talk & sp... │
+│ 35  │  STEREOREY: La Máxima Dimensión del Radio.            │   MX    │ all-time-classics,cdmx,ciudad de méxico,... │
+│ 36  │  TNT Radio live                                       │   US    │   climate sceptics,covid19,politics,talk    │
+│ 37  │  WBBM Newsradio 780 AM & 105.9 FM                     │   US    │ local news,local traffic & weather,natio... │
+│ 38  │ __1 oldies                                            │   US    │ 70s,80s,90s,disco,musica romantica,oldie... │
+│ 39  │ __1oldies                                             │   US    │                                             │
+│ 40  │ __GOLDIES__ by rautemusik (rm.fm)                     │   DE    │ 1960s,1970s,1980s,1990s,60er,60s,70er,70... │
+│ 41  │ __SCHLAGER OLDIES__ by rautemusik (rm.fm)             │   DE    │ 60s,70s,80s,90s,discofox,discofox oldies... │
+│ 42  │ __SCHLAGERRADIO.FM__ by rautemusik (rm.fm)            │   DE    │ charts,dance,disco,discofox,discofox old... │
+│ 43  │ __WACKENRADIO__ by rautemusik (rm.fm)                 │   DE    │ alternative rock,classic rock,hard rock,... │
+│ 44  │ _80s_Radio                                            │   US    │ 1980,1980s,24/7,80,80er,80r,80s,avant-ga... │
+│ 45  │ _BEST REMIXES_ Your HipHop - RnB - Latin - House -... │   DE    │ charts,deejay,deep house,dj,dj mixes,dj ... │
+│ 46  │ _Funky Corner Radio (Spain)                           │   ES    │ 70s,70s disco,80s,black,black music,disc... │
+│ 47  │ _Funky Corner Radio (USA)                             │   US    │ 70s,70s disco,80s,black,black music,disc... │
+│ 48  │ _Radio Energy Classic (Italy)                         │   IT    │ 70s,80s,90s,classic hits,classic rock,di... │
+│ 49  │ _Radio Energy(USA)                                    │   US    │ 2000s,70s,80s,90s,adult contemporary,adu... │
+│ 50  │ _Wawa Radio 101.2                                     │   IL    │                classic rock                 │
+│ 51  │ _Wawa Radio 101.2 FM                                  │   CN    │            dance,hardcore,mixed             │
+│ 52  │ _Wawa Radio 101.2 FM                                  │   ID    │            dance,hardcore,mixed             │
+│ 53  │ - 0 N - 2000s on Radio                                │   DE    │ 00er,00s,2000er,2000s,dance,hits,pop,roc... │
+│ 54  │ - 0 N - 2000s on Radio                                │   DE    │ 00er,00s,2000er,2000s,dance,hits,pop,roc... │
+│ 55  │ - 0 N - 2010s on Radio                                │   DE    │ 10er,10s,2010er,2010s,dance,hits,pop,roc... │
+│ 56  │ - 0 N - 2010s on Radio                                │   DE    │ 10er,10s,2010er,2010s,dance,hits,pop,roc... │
+│ 57  │ - 0 N - 50s on Radio                                  │   DE    │     50s,60er,oldies,rock 'n' roll,twist     │
+│ 58  │ - 0 N - 50s on Radio                                  │   DE    │     50s,60er,oldies,rock 'n' roll,twist     │
+│ 59  │ - 0 N - 60s on Radio                                  │   DE    │ 60er,60s,funk,oldies,pop,rock 'n' roll,s... │
+│ 60  │ - 0 N - 60s on Radio                                  │   DE    │ 60er,60s,funk,oldies,pop,rock 'n' roll,s... │
+│ 61  │ - 0 N - 70s on Radio                                  │   DE    │             70er,70s,oldies,pop             │
+│ 62  │ - 0 N - 70s on Radio                                  │   DE    │             70er,70s,oldies,pop             │
+│ 63  │ - 0 N - 80s on Radio                                  │   DE    │             80er,80s,oldies,pop             │
+│ 64  │ - 0 N - 80s on Radio                                  │   DE    │             80er,80s,oldies,pop             │
+│ 65  │ - 0 N - 80s on Radio                                  │   DE    │             80er,80s,oldies,pop             │
+│ 66  │ - 0 N - 90s on Radio                                  │   DE    │       90er,90s,dance,oldies,pop,rock        │
+│ 67  │ - 0 N - 90s on Radio                                  │   DE    │       90er,90s,dance,oldies,pop,rock        │
+│ 68  │ - 0 N - Black on Radio                                │   DE    │     black,hip hop,hiphop,pop,r&b,top 40     │
+│ 69  │ - 0 N - Black on Radio                                │   DE    │     black,hip hop,hiphop,pop,r&b,top 40     │
+│ 70  │ - 0 N - Blues on Radio                                │   DE    │        blues,r&b,rhythm & blues,soul        │
+│ 71  │ - 0 N - Blues on Radio                                │   DE    │        blues,r&b,rhythm & blues,soul        │
+│ 72  │ - 0 N - Charts on Radio                               │   DE    │       dance,hits,house,pop,rock,top40       │
+│ 73  │ - 0 N - Charts on Radio                               │   DE    │       dance,hits,house,pop,rock,top40       │
+│ 74  │ - 0 N - Chillout on Radio                             │   DE    │   ambient,chillout,easy listening,electro   │
+│ 75  │ - 0 N - Chillout on Radio                             │   DE    │   ambient,chillout,easy listening,electro   │
+│ 76  │ - 0 N - Chillout on Radio                             │   DE    │   ambient,chillout,easy listening,electro   │
+│ 77  │ - 0 N - Chillout on Radio                             │   DE    │   ambient,chillout,easy listening,electro   │
+│ 78  │ - 0 N - Chillout on Radio                             │   DE    │   ambient,chillout,easy listening,electro   │
+│ 79  │ - 0 N - Christmas on Radio                            │   DE    │ christmas,holiday,jazz,oldies,season,wei... │
+│ 80  │ - 0 N - Christmas on Radio                            │   DE    │ christmas,holiday,jazz,oldies,season,wei... │
+│ 81  │ - 0 N - Classic Rock on Radio                         │   DE    │     80er,80s,90er,90s,classic rock,rock     │
+│ 82  │ - 0 N - Classic Rock on Radio                         │   DE    │     80er,80s,90er,90s,classic rock,rock     │
+│ 83  │ - 0 N - Classic Rock on Radio                         │   DE    │     80er,80s,90er,90s,classic rock,rock     │
+│ 84  │ - 0 N - Country on Radio                              │   DE    │              country,pop,rock               │
+│ 85  │ - 0 N - Country on Radio                              │   DE    │              country,pop,rock               │
+│ 86  │ - 0 N - Dance on Radio                                │   DE    │             dance,house,techno              │
+│ 87  │ - 0 N - Dance on Radio                                │   DE    │             dance,house,techno              │
+│ 88  │ - 0 N - Dance on Radio                                │   DE    │             dance,house techno              │
+│ 89  │ - 0 N - Dance on Radio                                │   DE    │             dance,house techno              │
+│ 90  │ - 0 N - Dance on Radio                                │   DE    │             dance,house techno              │
+│ 91  │ - 0 N - Deutsch Pop on Radio                          │   DE    │         balladen,pop,rock,schlager          │
+│ 92  │ - 0 N - Deutsch Pop on Radio                          │   DE    │         balladen,pop,rock,schlager          │
+│ 93  │ - 0 N - Deutsch Pop on Radio                          │   DE    │         balladen,pop,rock,schlager          │
+│ 94  │ - 0 N - Deutsch Pop on Radio                          │   DE    │         balladen,pop,rock,schlager          │
+│ 95  │ - 0 N - Deutsch Rap on Radio                          │   DE    │              hip hop,rap,urban              │
+│ 96  │ - 0 N - Deutsch Rap on Radio                          │   DE    │              hip hop,rap,urban              │
+│ 97  │ - 0 N - Deutsch Rock on Radio                         │   DE    │   alternative,deutsch rock,hard rock,rock   │
+│ 98  │ - 0 N - Deutsch Rock on Radio                         │   DE    │   alternative,deutsch rock,hard rock,rock   │
+│ 99  │ - 0 N - Disco on Radio                                │   DE    │ 70er,70s,80er,80s,disco,funk,oldies,pop,... │
+│ 100 │ - 0 N - Disco on Radio                                │   DE    │ 70er,70s,80er,80s,disco,funk,oldies,pop,... │
+└─────┴───────────────────────────────────────────────────────┴─────────┴─────────────────────────────────────────────┘
+Type the result ID to play: 

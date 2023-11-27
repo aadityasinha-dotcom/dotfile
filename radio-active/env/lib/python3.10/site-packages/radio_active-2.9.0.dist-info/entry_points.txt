@@ -1,0 +1,4 @@
+[console_scripts]
+radio = radioactive.__main__:main
+radioactive = radioactive.__main__:main
+
