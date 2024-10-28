@@ -84,15 +84,43 @@ Here you can find a preview of all the themes. Some of them may have different c
 
 <img src="https://github.com/CharlieS1103/Glaze-theme/blob/main/screenshots/gray.png" alt="img" >
 
+## Matte
+
+#### Matte
+![Matte](Matte/screenshots/ylx-matte.png)
+
+#### Periwinkle
+
+| ![Periwinkle](Matte/screenshots/ylx-periwinkle.png) | ![Periwkinle-Dark](Matte/screenshots/ylx-periwinkle-dark.png) |
+| :-------------------------------------------------: | :-----------------------------------------------------------: |
+|                        Light                        |                            Dark                               |
+
+#### Porcelain
+![Porcelain](Matte/screenshots/ylx-porcelain.png)
+
+#### Gray
+![Gray](Matte/screenshots/ylx-gray.png)
+| ![Gray-Light](Matte/screenshots/ylx-gray-light.png) | ![Gray-Dark1](Matte/screenshots/ylx-gray-dark1.png) |
+| :-------------------------------------------------: | :-------------------------------------------------: |
+|                        Light                        |                       Dark                          |
+
+## Nightlight
+
+![Nightlight](Nightlight/screenshots/nightlight.png) 
+
 ## Onepunch
 
 #### Dark
 
-![dark_home](Onepunch/screenshots/dark_home.png)
+![dark_ylx](Onepunch/screenshots/dark_ylx.png)
 
 #### Light
 
-![light_home](Onepunch/screenshots/light_home.png)
+![light_ylx](Onepunch/screenshots/light_ylx.png)
+
+#### Legacy
+
+![legacy_ylx](Onepunch/screenshots/legacy_ylx.png)
 
 ## Sleek
 
@@ -110,8 +138,63 @@ Here you can find a preview of all the themes. Some of them may have different c
 |                Psycho                 |             UltraBlack              |
 |     ![Wealthy](Sleek/wealthy.png)     |    ![Dracula](Sleek/dracula.png)    |
 |                Wealthy                |               Dracula               |
-|  ![VantaBlack](Sleek/vantablack.png)  |
-|              VantaBlack               |
+|  ![VantaBlack](Sleek/vantablack.png)  |   ![RosePine](Sleek/rosepine.png)   |
+|              VantaBlack               |              RosePine               |
+
+## text
+
+### Spotify
+
+![Spotify](text/screenshots/Spotify.png)
+
+### Spicetify
+
+![Spicetify](text/screenshots/Spicetify.png)
+
+### Catppuccin
+
+|                                                          |                                                                  |
+|:--------------------------------------------------------:|:----------------------------------------------------------------:|
+| ![CatppuccinMocha](text/screenshots/CatppuccinMocha.png) | ![CatppuccinMacchiato](text/screenshots/CatppuccinMacchiato.png) |
+| Catppuccin Mocha                                         | Catppuccin Macchiato                                             |
+| ![CatppuccinLatte](text/screenshots/CatppuccinLatte.png) |                                                                  |
+| Catppuccin Latte                                         |                                                                  |
+
+#### Dracula
+
+![Dracula](text/screenshots/Dracula.png)
+
+#### Gruvbox
+
+![Gruvbox](text/screenshots/Gruvbox.png)
+
+#### Kanagawa
+
+![Kanagawa](text/screenshots/Kanagawa.png)
+
+#### Nord
+
+![Nord](text/screenshots/Nord.png)
+
+#### Rigel
+
+![CatppuccinMaRigelcchiato](text/screenshots/Rigel.png)
+
+#### RosePine
+
+| ![RosePine](text/screenshots/RosePine.png) | ![RosePineMoon](text/screenshots/RosePineMoon.png) |
+|:------------------------------------------:|:--------------------------------------------------:|
+| Rose Pine                                  | Rose Pine Moon                                     |
+
+#### Solarized
+
+![Solarized](text/screenshots/Solarized.png)
+
+#### TokyoNight
+
+| ![TokyoNight](text/screenshots/TokyoNight.png) | ![TokyoNightStorm](text/screenshots/TokyoNightStorm.png) |
+|:----------------------------------------------:|:--------------------------------------------------------:|
+| Tokyo Night                                    | Tokyo Night Storm                                        |
 
 ## Turntable
 
